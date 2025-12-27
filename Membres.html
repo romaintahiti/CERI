@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Membres – CÉRI</title>
+    <style>
+        /* Background & body */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            background: linear-gradient(135deg, #003D69, #1894D3);
+            background-size: 400% 400%;
+            animation: gradientFlow 20s ease infinite;
+        }
+
+        @keyframes gradientFlow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Header */
+        header {
+            background: rgba(39, 163, 245, 0.9);
+            padding: 35px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.6rem;
+            color: #ffffff;
+        }
+
+        /* Navbar */
+        nav {
+            background: rgba(0, 0, 0, 0.35);
+            padding: 12px 0;
+            text-align: center;
+            backdrop-filter: blur(6px);
+        }
+
+        nav a {
+            color: #FFFFFF;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #FFD700;
+        }
+
+        /* Sections */
+        .section {
+            max-width: 900px;
+            margin: 40px auto;
+            background: rgba(0,0,0,0.32);
+            padding: 30px;
+            border-radius: 12px;
+            backdrop-filter: blur(6px);
+        }
+
+        h2 {
+            color: #FFFFFF;
+            margin-top: 0;
+        }
+
+        /* Member list */
+        .member-list a {
+            display: block;
+            font-size: 1.2rem;
+            color: #ffffff;
+            padding: 12px 15px;
+            margin: 10px 0;
+            background: rgba(255,255,255,0.08);
+            border-radius: 8px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .member-list a:hover {
+            background: rgba(255,255,255,0.18);
+            color: #FFFFFF;
+            transform: translateX(4px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            opacity: 0.7;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Membres du CÉRI</h1>
+</header>
+
+<!-- NAVBAR -->
+<nav>
+    <a href="CERI.html">Accueil</a>
+    <a href="Actualités.html">Actualités</a>
+    <a href="Activités de recherches.html">Activités de recherches</a>
+    <a href="Membres.html">Membres</a>
+</nav>
+
+<div class="section">
+    <h2>Équipe dirigeante</h2>
+    <div class="member-list">
+        <a href="Profil_Arnaud_De_Raulin.html">Arnaud de Raulin – Président</a>
+        <a href="Profil_Brice_Dumas.html">Brice Dumas – Vice-Président</a>
+        <a href="Profil_Aurelie_bayen.html">Aurélie Bayen-Poisson – Trésorière</a>
+    </div>
+</div>
+
+<div class="section">
+    <h2>Membres associés</h2>
+    <div class="member-list">
+        <a href="#">(Ajouter un membre)</a>
+        <a href="#">(Ajouter un membre)</a>
+        <a href="#">(Ajouter un membre)</a>
+    </div>
+</div>
+
+<footer>
+    © 2025 CÉRI – Cercle d’Étude des Relations Internationales
+</footer>
+
+</body>
+</html>

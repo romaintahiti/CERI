@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Activités de recherches</title>
+    <style>
+        /* Background & body */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            background: linear-gradient(135deg, #003D69, #1894D3);
+            background-size: 400% 400%;
+            animation: gradientFlow 20s ease infinite;
+        }
+
+        @keyframes gradientFlow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Header */
+        header {
+            background: rgba(39, 163, 245, 0.9);
+            padding: 35px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.6rem;
+            color: #ffffff;
+        }
+
+        /* Navbar */
+        nav {
+            background: rgba(0, 0, 0, 0.35);
+            padding: 12px 0;
+            text-align: center;
+            backdrop-filter: blur(6px);
+        }
+
+        nav a {
+            color: #FFFFFF;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #FFD700;
+        }
+
+        /* Publications Grid */
+        .Publications {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            justify-items: center;
+        }
+
+        /* Card */
+        .Publications a {
+            display: flex;
+            flex-direction: column;
+            width: 33vw;
+            max-width: 400px;
+            background: rgba(255,255,255,0.08);
+            border-radius: 12px;
+            text-decoration: none;
+            color: #ffffff;
+            transition: 0.3s ease;
+        }
+
+        .Publications a:hover {
+            background: rgba(255,255,255,0.18);
+            transform: translateY(-4px);
+        }
+
+        /* Image */
+        .Publications img {
+            width: 100%;
+            object-fit: cover;
+        }
+
+        /* Content */
+        .pub-content {
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .pub-content h3 {
+            font-size: 1.2rem;
+            margin: 0;
+        }
+
+        .pub-content h4 {
+            font-size: 0.95rem;
+            font-weight: normal;
+            opacity: 0.8;
+            margin: 0;
+        }
+
+        .pub-text {
+            font-size: 0.9rem;
+            opacity: 0.85;
+            margin-top: 8px;
+            line-height: 1.4;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            opacity: 0.7;
+            color: #ffffff;
+        }
+
+        /* Small screens */
+        @media (max-width: 900px) {
+            .Publications {
+                grid-template-columns: 1fr;
+            }
+
+            .Publications a {
+                width: 90vw;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Activités de recherches</h1>
+</header>
+
+<nav>
+    <a href="CERI.html">Accueil</a>
+    <a href="Actualités.html">Actualités</a>
+    <a href="Activités de recherches.html">Activités de recherches</a>
+    <a href="Membres.html">Membres</a>
+</nav>
+
+<div class="Publications">
+    <a href="https://www.editions-harmattan.fr/catalogue/livre/la-conquete-des-espaces-maritimes-et-les-nouveaux-defis-de-lenvironnement/79325" target="_blank" rel="noopener noreferrer">
+        <img src="Livre_Aurélie_1.png" alt="Livre_Aurélie_1">
+        <div class="pub-content">
+            <h3>La conquête des espaces maritimes et les nouveaux défis de l'environnement</h3>
+            <h4>Dirigé par : Arnaud De Raulin, Aurélie Bayen-Poisson</h4>
+            <p class="pub-text">
+                La planète est en danger et la mer est l’une des principales nourricières de l’Homme. 
+                La conquête des mers, qui a longtemps été le symbole d’un progrès de nos sociétés, 
+                est aujourd’hui mise à mal par l’économie libérale qui s’approprie ses ressources sans limite et sans mesure.
+                Historiquement l’anthropocène, qui était au coeur de la vision économique de l’Homme, signifiait que celui-ci dominait le monde et que toute chose se rapportait à lui. 
+                Cette conception unilinéaire montre aujourd’hui ses limites et se traduit par une importante disparition des espèces vivantes.
+                Désormais, le néo-anthropocentrisme exprime l’idée que l’évolution de l’espèce humaine est entièrement corrélée et liée aux facteurs biologiques. 
+                Il faut distinguer aussi l’importance de la culture, biologique et humaine, qui fonde l’interdépendance entre les différentes espèces vivantes et permet l’équilibre de l’humanité.
+            </p>
+        </div>
+    </a>
+
+    <a href="https://www.editions-harmattan.fr/catalogue/livre/les-systemes-dalerte-et-la-democratie-renovee/254" target="_blank" rel="noopener noreferrer">
+        <img src="Livre_Aurélie_2.png" alt="Livre_Aurélie_2">
+        <div class="pub-content">
+            <h3>Les systèmes d'alerte et la démocratie rénovée</h3>
+            <h4>de Aurélie Bayen-Poisson, Arnaud De Raulin</h4>
+            <p class="pub-text">
+                Devenus de véritables acteurs de la société, les lanceurs d’alerte ont acquis une place stratégique en tant qu’éléments de régulation, de contrôle et de surveillance. 
+                Promoteurs d’une citoyenneté novatrice, ils participent à la vie démocratique, principalement dans les domaines économique, politique, sanitaire, social et environnemental. 
+                Ainsi, ils nous interrogent sur l’efficacité de nos mécanismes traditionnels et la transparence des décisions de nos systèmes de gouvernance. Certaines affaires récentes comme WikiLeaks ou la gestion de la crise sanitaire du COVID-19 ont montré leur force dans ce combat difficile mené au nom de la justice et d’une gouvernance juste, inclusive et efficiente. 
+                Cet ouvrage formule des pistes de réflexion pluridisciplinaires issues des sciences juridiques, politiques, humaines et sociales, permettant d’évaluer les dynamiques de rénovation et de réforme à l’œuvre dans nos systèmes démocratiques.
+            </p>
+        </div>
+    </a>
+
+    <a href="https://www.editions-harmattan.fr/catalogue/livre/culture-et-modernite-dans-loutre-mer-francais/8585" target="_blank" rel="noopener noreferrer">
+        <img src="Livre_Aurélie_3.png" alt="Livre_Aurélie_3">
+        <div class="pub-content">
+            <h3>Culture et modernité dans l'outre-mer français - Les défis de la mondialisation</h3>
+            <h4>de Aurélie Bayen-Poisson, Arnaud De Raulin, Arnaud Haquet</h4>
+            <p class="pub-text">
+                La diversité culturelle doit-elle devenir le passage obligé vers la mondialisation ? L’intérêt de cet ouvrage collectif est de s’interroger sur les défis posés par les effets de la mondialisation, en particulier dans les sociétés ultramarines d’aujourd’hui. 
+                La richesse de la transmission culturelle des Outre-mer français tient en effet à un partage des cultures mais aussi à cette universalité qui les fait se rejoindre, malgré l’éloignement et le morcellement de ces territoires pour la plupart insulaires. 
+                Face à la mondialisation, comment garantir aux sociétés ultramarines que leur développement puisse continuer à promouvoir la diversité de leur identité culturelle au sein de l’espace français ? 
+                Les auteurs, anthropologues, linguistes, juristes et sociologues, tentent de répondre à ces questions dans une série d’articles ouvrant le champ des débats sur l’avenir des Outre-mer.
+            </p>
+        </div>
+    </a>
+</div>
+
+<footer>
+    © 2025 CÉRI – Cercle d’Étude des Relations Internationales
+</footer>
+
+</body>
+</html>
